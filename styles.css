@@ -5,11 +5,12 @@
   font-family: Gotham Rounded, sans-serif;
 }
 body {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     hsl(200, 100%, 50%),
     hsl(175, 100%, 50%)
-  );
+  ); */
+  background: #111;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,11 +20,13 @@ body {
 .clock {
   width: 300px;
   height: 300px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #1d1d1d;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 2px solid rgba(218, 204, 204, 0.336);
   position: relative;
+  color: #fff;
 }
+
 .clock::after {
   content: "";
   background-color: black;
@@ -85,8 +88,7 @@ body {
   bottom: 50%;
   left: 50%;
 
-  background: black;
-  border: 1px solid white;
+  border: 1px solid;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   z-index: 10;
@@ -96,15 +98,15 @@ body {
 .clock .hand.second {
   width: 5px;
   height: 50%;
-  background: red;
+  background: #e74c3c;
 }
 .clock .hand.minute {
   width: 7px;
   height: 40%;
-  background: black;
+  background: #3498db;
 }
 .clock .hand.hour {
   width: 10px;
   height: 35%;
-  background: black;
+  background: #2ecc71;
 }
